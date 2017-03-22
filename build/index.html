@@ -15,7 +15,34 @@
 <![endif]-->
 </head>
 <body>
-//=include templates/header.html
+<header class="ba-header">
+	<div class="row column">
+		<div class="top-bar align-middle">
+			<div class="top-bar-title">
+				<a class="ba-logo" href="index.html">
+					<img src="../assets/img/logo.png" alt="logo">
+				</a>
+			</div>
+			<span class="float-right" data-responsive-toggle="responsive-menu" data-hide-for="medium">
+				<button class="menu-icon dark" type="button" data-toggle></button>
+			</span>
+			<div id="responsive-menu">
+				<div class="top-bar-right">
+					<ul class="ba-main-menu menu vertical medium-horizontal">
+						<li class=""><a href="index.html">HOME</a></li>
+						<li><a href="about.html">ABOUT US</a></li>
+						<li><a href="blog.html">HISTORY</a></li>
+						<li><a href="services.html">PRODUCTS</a></li>
+						<li><a href="contacts.html">CONTATC</a></li>
+						<li><a href="#" class="question-btn ba-site-btn">ASK A QUESTION</a></li>
+					</ul>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
 
 <main class="ba-main">
 
@@ -179,8 +206,110 @@
 
 </main>
 
-	//=include templates/footer.html
-	//=include templates/scripts.html
+	<footer class="ba-footer">
+
+		<div class="row column">
+
+			<div class="row">
+
+				<div class="small-12 medium-4 column">
+
+					<h3 class="ba-section-title ba-section-title--small">Site navigation</h3>
+
+					<ul class="ba-footer__nav">
+
+						<li class=""><a href="index.html">Home</a></li>
+
+						<li><a href="about.html">About Us</a></li>
+
+						<li><a href="blog.html">Shop</a></li>
+
+						<li><a href="contacts.html">Contact Us</a></li>
+
+					</ul>
+
+				</div>
+
+				<div class="ba-footer__galery  small-12 medium-4 column">
+
+					<h3 class="ba-section-title ba-section-title--small">Gallery</h3>
+
+					<div class="row small-up-3">
+
+						<div class="column column-block">
+
+							<img src="../assets/img/gallery-1.png" alt="1">
+
+						</div>
+
+						<div class="column column-block">
+
+							<img src="../assets/img/gallery-2.png" alt="2">
+
+						</div>
+
+						<div class="column column-block">
+
+							<img src="../assets/img/gallery-3.png" alt="3">
+
+						</div>
+
+	
+
+						<div class="column column-block">
+
+							<img src="../assets/img/gallery-4.png" alt="4">
+
+						</div>
+
+						<div class="column column-block">
+
+							<img src="../assets/img/gallery-5.png" alt="5">
+
+						</div>
+
+						<div class="column column-block">
+
+							<img src="../assets/img/gallery-6.png" alt="6">
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="small-12 medium-4 column">
+
+					<h3 class="ba-section-title ba-section-title--small">Timing</h3>
+
+					<ul class="ba-footer__timing" >
+
+						<li>MON – THUR 10:00am – 12:00pm</li>
+
+						<li>FRIDAY 6:00pm – 8:00pm</li>
+
+						<li>SATURDAY 6:30pm – 9:30pm</li>
+
+						<li>SUNDAY CLOSED</li>
+
+					</ul>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</footer>
+
+	
+	
+	<script src="assets/js/app.js"></script>
+	
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAD0_CanAnvbb4jBUU3b2LTK59u2bZLkXA"></script>
+	
+	<!-- <script src="assets/js/map.js"></script> -->
+	
 
 </body>
 </html>

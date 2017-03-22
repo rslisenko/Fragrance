@@ -33,19 +33,45 @@
 //=require slick.min.js
 
 
-;(function($){
+;(function(){
 	$(document).foundation();
 
 	$(document).ready(function(){
-		//var $slider = $('.ba-slider');
 
-		// $slider.slick({
-		// 	dots: true,
-		// 	infinite: false
-		// });
+	var poltavaInfo = document.querySelector('.ba-poltava-info');
+		// poltavaInfo = poltavaInfo.innerHTML;
+
+		var map = new google.maps.Map(document.querySelector('.ba-map'), {
+		    zoom: 11,
+		    center: {lat: 48.8185517, lng: 2.3832553}
+	 	 });
+
+	 	 var image = 'assets/img/marker.png';
+	 	 var myMarker = new google.maps.Marker({
+	 	   	position: {lat: 48.8185517, lng: 2.3832553},
+		    map: map,
+		    icon: image
+		  });
+
+	 	var styles = [
+	 	  {
+	 	    featureType: "road",
+	 	    stylers: [
+	 	      { hue: "#d4c9e4" },
+	 	      { saturation: -20}
+	 	    ]
+	 	  },{
+	 	    featureType: "geometry.fill",
+	 	    stylers: [
+	 	      { hue: "#d4c9e4" },
+	 	      { saturation: -60}
+	 	    ]
+	 	  }
+	 	];
+	 	   map.setOptions({styles: styles});
+
 	});
-
-})(jQuery);
+})();
 
 
 
